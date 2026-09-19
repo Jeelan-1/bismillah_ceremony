@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ayesha Humaira – Bismillah Khwani</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; min-height: 100vh; display: flex; justify-content: center;
+    align-items: center; padding: 24px; font-family: Arial, sans-serif;
+    background: linear-gradient(135deg,#fff8ef,#f7efe4); color:#3b2a1f;
+  }
+  .card {
+    width: min(100%, 900px); background:#fff; border-radius:20px;
+    padding:24px; box-shadow:0 12px 35px rgba(0,0,0,.12); text-align:center;
+  }
+  h1 { margin:4px 0 8px; font-size:clamp(25px,5vw,40px); }
+  p { margin:0 0 18px; color:#705c4c; }
+  .video {
+    position:relative; width:100%; aspect-ratio:16/9; background:#111;
+    border-radius:14px; overflow:hidden;
+  }
+  iframe { width:100%; height:100%; border:0; }
+  .buttons { display:flex; gap:12px; justify-content:center; flex-wrap:wrap; margin-top:18px; }
+  a {
+    display:inline-block; text-decoration:none; padding:12px 18px;
+    border-radius:10px; font-weight:700;
+  }
+  .watch { background:#6d4c41; color:white; }
+  .download { background:#eee2d5; color:#3b2a1f; }
+  .note { margin-top:15px; font-size:13px; color:#8a7869; }
+</style>
+</head>
+<body>
+  <main class="card">
+    <h1>Bismillah Khwani</h1>
+    <p>Ayesha Humaira</p>
+
+    <div class="video">
+      <iframe
+        src="https://drive.google.com/file/d/1FEkRmzh9diLqy4t-5AKY8UgStZFhp_iE/preview"
+        allow="autoplay"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <div class="buttons">
+      <a class="watch" href="https://drive.google.com/file/d/1FEkRmzh9diLqy4t-5AKY8UgStZFhp_iE/view" target="_blank" rel="noopener">
+        Open Video
+      </a>
+      <a class="download" href="https://drive.google.com/uc?export=download&id=1FEkRmzh9diLqy4t-5AKY8UgStZFhp_iE" target="_blank" rel="noopener">
+        Download Video
+      </a>
+    </div>
+
+    <div class="note">
+      If the video does not play, open it with the “Open Video” button and make sure the Google Drive file is shared with the intended viewers.
+    </div>
+  </main>
+</body>
+</html>

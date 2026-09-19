@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#f8f1e8">
+<title>Bismillah Khwani – Ayesha Humaira</title>
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin:0; padding:0; min-height:100%; }
+  body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(145deg,#fffaf4,#f4eadf);
+    color:#3b2a1f;
+  }
+  .page {
+    width:100%;
+    min-height:100vh;
+    padding:clamp(14px,4vw,36px);
+    display:flex;
+    justify-content:center;
+  }
+  .card {
+    width:min(100%, 960px);
+    height:max-content;
+    background:#fff;
+    border-radius:clamp(12px,3vw,22px);
+    padding:clamp(16px,4vw,30px);
+    box-shadow:0 8px 30px rgba(0,0,0,.10);
+    text-align:center;
+  }
+  h1 {
+    margin:0;
+    font-size:clamp(26px,7vw,44px);
+    line-height:1.15;
+  }
+  .name {
+    margin:8px 0 20px;
+    font-size:clamp(16px,4vw,21px);
+    color:#735d4c;
+  }
+  .video-wrap {
+    width:100%;
+    position:relative;
+    aspect-ratio:16 / 9;
+    min-height:200px;
+    background:#111;
+    border-radius:clamp(10px,2.5vw,16px);
+    overflow:hidden;
+  }
+  iframe {
+    display:block;
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    border:0;
+  }
+  .buttons {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:10px;
+    margin-top:18px;
+  }
+  .btn {
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    min-height:46px;
+    padding:12px 18px;
+    border-radius:10px;
+    text-decoration:none;
+    font-weight:700;
+    font-size:15px;
+    width:min(100%,220px);
+  }
+  .watch { background:#6d4c41; color:#fff; }
+  .download { background:#eee2d5; color:#3b2a1f; }
+  .hint {
+    margin:14px auto 0;
+    max-width:650px;
+    font-size:13px;
+    line-height:1.5;
+    color:#887567;
+  }
+  @media (max-width:600px) {
+    .page { padding:10px; align-items:flex-start; }
+    .card { border-radius:14px; padding:14px; }
+    .video-wrap {
+      aspect-ratio:16/9;
+      border-radius:10px;
+    }
+    .buttons { margin-top:14px; }
+    .btn { width:100%; }
+  }
+  @media (orientation:portrait) and (max-width:600px) {
+    .video-wrap { width:100%; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+  <main class="card">
+    <h1>Bismillah Khwani</h1>
+    <div class="name">Ayesha Humaira</div>
+
+    <div class="video-wrap">
+      <iframe
+        src="https://drive.google.com/file/d/1FEkRmzh9diLqy4t-5AKY8UgStZFhp_iE/preview"
+        allow="autoplay; fullscreen; encrypted-media"
+        allowfullscreen
+        loading="lazy">
+      </iframe>
+    </div>
+
+    <div class="buttons">
+      <a class="btn watch"
+         href="https://drive.google.com/file/d/1FEkRmzh9diLqy4t-5AKY8UgStZFhp_iE/view"
+         target="_blank" rel="noopener">▶ Open Video</a>
+      <a class="btn download"
+         href="https://drive.google.com/uc?export=download&id=1FEkRmzh9diLqy4t-5AKY8UgStZFhp_iE"
+         target="_blank" rel="noopener">⬇ Download Video</a>
+    </div>
+
+    <div class="hint">
+      For the best experience on a phone, use the Open Video button if the embedded
+      player does not load. The video must finish processing in Google Drive before
+      browser playback becomes available.
+    </div>
+  </main>
+</div>
+</body>
+</html>
